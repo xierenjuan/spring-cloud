@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: user-service
+  profiles:
+    active: dev
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  typeAliasesPackage: com.test.common.entity
+  configuration:
+    cache-enabled: false
+    local-cache-scope: statement
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6060/eureka/
+server:
+  port: 6063
+  servlet:
+    context-path: /userservice
