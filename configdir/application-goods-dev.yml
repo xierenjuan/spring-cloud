@@ -4,7 +4,7 @@ server:
     context-path: /goodsservice
 spring:
   profiles:
-    active: @profile.env@
+    active: dev
   datasource:
     url: jdbc:mysql://localhost:3306/test?useSSL=false
     username: root
