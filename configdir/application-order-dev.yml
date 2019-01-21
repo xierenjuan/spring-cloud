@@ -7,7 +7,7 @@ spring:
   application:
     name: order-service
   profiles:
-    active: @profile.env@
+    active: dev
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   typeAliasesPackage: com.test.common.entity
