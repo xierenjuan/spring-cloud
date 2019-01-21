@@ -1,0 +1,27 @@
+server:
+  port: 6061
+  servlet:
+    context-path: /goodsservice
+spring:
+  profiles:
+    active: @profile.env@
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: goods-service
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  typeAliasesPackage: com.test.common.entity
+  configuration:
+    cache-enabled: false
+    local-cache-scope: statement
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6060/eureka/
+#  instance:
+#    instance-id: ${spring.cloud.client.hostname}:${spring.cloud.client.ipAddress}:${server.port}
+#    prefer-ip-address: true
