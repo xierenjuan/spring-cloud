@@ -4,7 +4,7 @@ server:
     context-path: /goodsservice
 spring:
   profiles:
-    active: @profile.env@
+    active: dev
   datasource:
     url: jdbc:mysql://localhost:3306/test?useSSL=false
     username: root
@@ -22,6 +22,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:6060/eureka/
+test: 
+  name: tom
+  num: 20
 #  instance:
 #    instance-id: ${spring.cloud.client.hostname}:${spring.cloud.client.ipAddress}:${server.port}
 #    prefer-ip-address: true
