@@ -1,7 +1,5 @@
 server:
   port: 6061
-  servlet:
-    context-path: /goodsservice
 spring:
   profiles:
     active: dev
