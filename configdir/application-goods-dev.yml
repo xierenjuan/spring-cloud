@@ -2,7 +2,7 @@ server:
   port: 6061
 spring:
   profiles:
-    active: dev
+    active: ${spring.cloud.config.profile}
   datasource:
     url: jdbc:mysql://localhost:3306/test?useSSL=false
     username: root
