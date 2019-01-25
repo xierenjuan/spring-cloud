@@ -7,7 +7,7 @@ spring:
   application:
     name: user-service
   profiles:
-    active: ${spring.cloud.config.profile}
+    active: dev
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   typeAliasesPackage: com.test.common.entity
