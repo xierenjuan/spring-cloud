@@ -19,4 +19,4 @@ zuul:
       serviceId: order-service
     user:
       path: /userservice/**
-      serviceId: user-service
+      serviceId: user-servicea
