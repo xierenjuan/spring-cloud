@@ -17,3 +17,6 @@ zuul:
     order:
       path: /orderservice/**
       serviceId: order-service
+    user:
+      path: /userservice/**
+      serviceId: user-service
