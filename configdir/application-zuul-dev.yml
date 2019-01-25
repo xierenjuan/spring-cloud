@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev
+    active: ${spring.cloud.config.profile}
   application:
     name: zuul-server
 server:
