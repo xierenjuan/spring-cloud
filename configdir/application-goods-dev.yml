@@ -1,7 +1,7 @@
 server:
   port: 6061
-#  servlet:
-#    context-path: /goods
+  servlet:
+    context-path: /goods
 spring:
   profiles:
     active: ${spring.cloud.config.profile}
