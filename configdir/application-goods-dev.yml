@@ -13,7 +13,7 @@ spring:
   application:
     name: goods-service
 mybatis:
-  mapperLocations: classpath:mapper/*Mapper.xml
+  mapperLocations: classpath*:mapper/*.xml
   typeAliasesPackage: com.test.common.entity
   configuration:
     cache-enabled: false
