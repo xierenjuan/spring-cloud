@@ -20,5 +20,3 @@ eureka:
       defaultZone: http://localhost:6060/eureka/
 server:
   port: 6062
-  servlet:
-    context-path: /order
