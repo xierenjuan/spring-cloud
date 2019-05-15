@@ -1,6 +1,18 @@
 server:
   port: 6061
 spring:
+  redis:
+    database: 1
+    host: 119.29.18.116
+    password: Hsb201911
+    jedis:
+      pool:
+        max-active: 1024
+        max-idle: 200
+        max-wait: 10000
+        min-idle: 0
+    port: 6338
+    timeout: 10000
   profiles:
     active: ${spring.cloud.config.profile}
   datasource:
