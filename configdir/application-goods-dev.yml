@@ -1,6 +1,12 @@
 server:
   port: 6061
 spring:
+  data:
+    elasticsearch:
+      cluster-name: my-application
+      cluster-nodes: jiangdou.xyz:9300
+      repositories:
+        enabled: true
   redis:
     database: 1
     host: 119.29.18.116
