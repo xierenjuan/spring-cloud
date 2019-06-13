@@ -10,7 +10,7 @@ spring:
   redis:
     database: 1
     host: 119.29.18.116
-    password: Hsb201911
+    password: Hsb@#$};123qazy
     jedis:
       pool:
         max-active: 1024
