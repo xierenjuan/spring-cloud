@@ -7,7 +7,7 @@ spring:
   application:
     name: order-service
   profiles:
-    active: dev # ${spring.cloud.config.profile}
+    active: ${spring.cloud.config.profile}
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   typeAliasesPackage: com.test.common.entity
