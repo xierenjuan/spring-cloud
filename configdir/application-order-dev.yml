@@ -6,8 +6,6 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   application:
     name: order-service
-  profiles:
-    active: ${spring.cloud.config.profile}
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   typeAliasesPackage: com.test.common.entity
