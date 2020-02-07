@@ -12,11 +12,11 @@ eureka:
 zuul:
   routes:
     goods:
-      path: /goodsservice/**
+      path: /sgoods/**
       serviceId: goods-service
     order:
-      path: /orderservice/**
+      path: /sorder/**
       serviceId: order-service
     user:
-      path: /userservice/**
+      path: /suser/**
       serviceId: user-service
