@@ -17,6 +17,11 @@ spring:
 security:
   basic:
     enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   typeAliasesPackage: com.test.common.entity
