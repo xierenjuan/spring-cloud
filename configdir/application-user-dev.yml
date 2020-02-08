@@ -35,4 +35,4 @@ eureka:
 server:
   port: 6063
 test:
-  name: tom4
+  name: tom5
