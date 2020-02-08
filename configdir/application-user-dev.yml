@@ -13,10 +13,6 @@ spring:
     password: guest
     host: localhost
     port: 5672
-#开启基本的权限，默认为true
-security:
-  basic:
-    enabled: false
 management:
   endpoints:
     web:
