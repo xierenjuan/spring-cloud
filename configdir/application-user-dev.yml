@@ -47,4 +47,4 @@ hystrix:
 server:
   port: 6063
 test:
-  name: tom7
+  name: tom8
