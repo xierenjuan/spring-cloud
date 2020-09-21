@@ -33,6 +33,17 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:6060/eureka/
+feign:
+  hystrix:
+    enabled: true
+#hystrix超时时间配置 （如果不配置的话默认是1000毫秒超时）
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
 server:
   port: 6063
 test:
