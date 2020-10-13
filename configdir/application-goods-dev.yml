@@ -3,21 +3,21 @@ server:
 spring:
   data:
     elasticsearch:
-      cluster-name: my-application
-      cluster-nodes: jiangdou.xyz:9300
+      cluster-name: elasticsearch
+      cluster-nodes: 192.168.0.193:9300
       repositories:
         enabled: true
   redis:
     database: 1
-    host: 119.29.18.116
-    password: Hsb@#$};123qazy
+    host: 192.168.0.193
+#    password: 123456
     jedis:
       pool:
         max-active: 1024
         max-idle: 200
         max-wait: 10000
         min-idle: 0
-    port: 6338
+    port: 6379
     timeout: 10000
   profiles:
     active: ${spring.cloud.config.profile}
