@@ -1,12 +1,6 @@
 server:
   port: 6061
 spring:
-#  data:
-#    elasticsearch:
-#      cluster-name: elasticsearch
-#      cluster-nodes: 192.168.0.193:9200
-#      repositories:
-#        enabled: true
   elasticsearch:
     rest:
       uris: http://192.168.0.193:9200
